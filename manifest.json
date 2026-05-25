@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Organizer",
+  "version": "0.1.0",
+  "description": "一键整理标签页：去重、按域名分组、合并窗口",
+  "permissions": ["tabs", "tabGroups", "storage", "notifications"],
+  "action": {
+    "default_title": "一键整理标签页",
+    "default_popup": "src/popup/index.html"
+  },
+  "background": {
+    "service_worker": "src/background/index.ts",
+    "type": "module"
+  },
+  "commands": {
+    "organize": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+O",
+        "mac": "Command+Shift+O"
+      },
+      "description": "一键整理标签页"
+    }
+  },
+  "icons": {
+    "16": "src/icons/icon-16.png",
+    "48": "src/icons/icon-48.png",
+    "128": "src/icons/icon-128.png"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "tab-organizer",
+  "displayName": "Tab Organizer",
+  "version": "0.1.0",
+  "description": "一键整理浏览器标签页 — 去重、分组、合并窗口",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch --config vite.config.ts",
+    "build": "node scripts/build.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.300",
+    "sharp": "^0.34.5",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  }
+}
